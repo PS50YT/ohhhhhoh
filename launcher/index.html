@@ -1,0 +1,194 @@
+<!DOCTYPE html><html lang="en"><head>
+ 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EaglercraftZ Launcher</title>
+    <link type="image/png" rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="css/lPBtrD6fpqB3.css">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+		<meta name="description" content="EaglercraftZ 1.20.4">
+		<meta name="keywords" content="eaglercraft, eaglercraftz, minecraft, 1.20, 1.20.4">
+		<title>EaglercraftZ</title>
+		<meta property="og:locale" content="en-US">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="EaglercraftZ">
+		<meta property="og:image" content="assets/background/panorama.mp4">
+		<meta property="og:description" content="Eaglercraft with 1.20 Features">
+
+        <style>
+
+html, body {
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    font-family: Inter;
+    color: white;
+    background-image: url('images/wallpaper_minecraft_winter_celebration_2048x2048.png');
+    background-attachment: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background: rgba(0,0,0,0.4);
+    border-top: 2px solid rgba(255,255,255,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 14px;
+}
+.footer .fa-regular {
+    font-size: 18px;
+}
+.line-v {
+    height: 50%;
+    background: rgba(255,255,255,0.5);
+    width: 2px;
+}
+.footer .fa-stack {
+    font-size: 16px;
+    width: 19px;
+    height: 19px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer .fa-stack .fa-square {
+    font-size: 22px;
+}
+.footer .fa-stack .fa-discord {
+    font-size: 10px;
+}
+
+
+
+
+
+/* Base dropdown positioning */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-btn {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 12px 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+/* Hidden by default */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 10;
+  border-radius: 8px;
+ overflow-y: scroll;
+   width: 100px;
+  height: 130px;   
+    
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 4px 4px;
+  text-decoration: none;
+  display: block;
+  
+}
+
+.dropdown-content a:hover {
+  background-color: #797979;
+}
+
+/* The magic class toggled by JS */
+.dropdown-content.show {
+  display: block;
+}
+
+/* Optional: Keep hover functionality ONLY for desktop screens */
+@media (min-width: 769px) {
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+}
+
+</style>
+</head>
+<body>
+    <div class="launcher-container">
+        
+        <div class="background"></div>
+        <div class="content">
+            <h1>FTEM Launcher</h1>
+            <p>Minecraft is a game about breaking and placing blocks. At first, people built structures to protect against nocturnal monsters, but as the game grew players worked together to create wonderful, imaginative things.
+
+<br><br>
+You can play Minecraft on Browser. It can be played in the browser with FTEM Launcher. We don't use any third-party cracked services. We use official accounts of Minecraft.</p>
+
+
+  <nav class="navbar">
+    <div class="dropdown">
+      <!-- Trigger button -->
+      <button class="dropdown-btn">Versions ▼</button>
+      <!-- Dropdown items -->
+      <div class="dropdown-content" id="dropdownMenu">
+        <a href="https://ftem-mc.vercel.app/1-12.html">1.12</a>
+        <a href="https://ftem-mc.vercel.app/1-8.html">1.8</a>
+        <a href="https://ftem-mc.vercel.app/1-5-2.html">1.5.2</a>
+        <a href="https://ftem-1-13.netlify.app/">1.13</a>
+        <a href="https://ftem-mc.vercel.app/eaglerforge-old.html">Eaglerforge-Old</a>
+        <a href="https://ftem-eaglerforge-injector.netlify.app/">Eaglerforge-Injector</a>
+       
+      </div>
+     
+    </div>
+     <button class="dropdown-btn"><a href="https://ftem-mods.vercel.app/" style="color: black; text-decoration: none;">Modpacks</a></button>
+  </nav>
+
+        
+            </div>
+        </div>
+    </div>
+    <script src="js/gUVSoZRZWy1Q.js"></script>
+
+
+<div class="footer">
+    <i class="fa-regular fa-shield-check"></i> <a style="color:white; text-decoration:none;" href="https://ftem-mc.vercel.app/" target="_blank">Find-The-Eagler-Beast</a>
+
+</div>
+
+<script>document.addEventListener('DOMContentLoaded', () => {
+  const dropdownBtn = document.querySelector('.dropdown-btn');
+  const dropdownMenu = document.getElementById('dropdownMenu');
+
+  // Toggle the menu on button click
+  dropdownBtn.addEventListener('click', (event) => {
+    event.stopPropagation(); // Prevents immediate closing from the window listener
+    dropdownMenu.classList.toggle('show');
+  });
+
+  // Close the dropdown if user taps outside of it
+  window.addEventListener('click', () => {
+    if (dropdownMenu.classList.contains('show')) {
+      dropdownMenu.classList.remove('show');
+    }
+  });
+});
+</script>
+
+</body></html>
